@@ -1,0 +1,29 @@
+PS D:\Users\admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\admin\AppData\Local\Programs\Python\Python312\python.exe c:/Users/admin/Desktop/traditional_ml_lab.py
+步骤 1: 特征工程 (SIFT-HOG-LBP)
+
+[训练集] 开始提取特征 (HOG+LBP+SIFT)
+[训练集] 完成。耗时: 66.50s, 样本数: 2256
+
+[测试集] 开始提取特征 (HOG+LBP+SIFT)
+[测试集] 完成。耗时: 6.86s, 样本数: 232
+融合后的特征向量维度: 2030
+
+步骤 2: 数据标准化
+
+步骤 3: 多模型训练与对比
+正在训练: Logistic Regression 完成。Acc: 25.00% | Time: 3.95s
+正在训练: KNN (k=5) 完成。Acc: 17.67% | Time: 0.14s
+正在训练: Gaussian NB 完成。Acc: 22.41% | Time: 0.14s
+正在训练: Decision Tree 完成。Acc: 12.50% | Time: 7.82s
+正在训练: SVM (Linear) 完成。Acc: 24.14% | Time: 2.67s
+正在训练: SVM (RBF) 完成。Acc: 26.29% | Time: 3.28s
+正在训练: Random Forest 完成。Acc: 21.55% | Time: 1.34s
+正在训练: Hist Gradient Boosting 完成。Acc: 31.90% | Time: 188.49s
+正在训练: MLP (Neural Net) 完成。Acc: 24.14% | Time: 6.45s
+
+步骤 4: 自动生成可视化图表
+冠军模型: Hist Gradient Boosting
+全部完成。新图片已保存：
+1. chart_1_features_rank.png
+2. chart_2_confusion_matrix_features.png
+PS D:\Users\admin\AppData\Local\Programs\Microsoft VS Code> 
