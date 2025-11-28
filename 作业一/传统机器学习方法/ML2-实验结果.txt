@@ -1,0 +1,66 @@
+PS D:\Users\admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\admin\AppData\Local\Programs\Python\Python312\python.exe c:/Users/admin/Desktop/traditional_ml_lab.py
+步骤 1: 特征提取 (颜色矩 + GLCM纹理)
+
+[训练集] 开始提取特征 (HSV+GLCM)
+[训练集] 完成。耗时: 36.47s, 样本数: 2255
+
+[测试集] 开始提取特征 (HSV+GLCM)
+[测试集] 完成。耗时: 3.79s, 样本数: 232
+新特征维度: 18 (特征越少，模型越不容易过拟合)
+
+步骤 2: 数据标准化
+
+步骤 3: 9种模型
+正在训练: Logistic Regression Acc: 14.22% | Time: 1.76s
+正在训练: KNN (k=5) Acc: 14.66% | Time: 0.13s
+正在训练: Gaussian NB Acc: 10.78% | Time: 0.00s
+正在训练: Decision Tree Acc: 10.34% | Time: 0.09s
+正在训练: SVM (Linear) Acc: 14.22% | Time: 0.38s
+正在训练: SVM (RBF) Acc: 17.24% | Time: 0.26s
+正在训练: Random Forest Acc: 17.67% | Time: 0.21s
+正在训练: Hist Gradient Boosting Acc: 16.81% | Time: 5.81s
+正在训练: MLP (Neural Net) Acc: 15.52% | Time: 3.08s
+
+步骤 4: 生成新图表
+
+本次实验冠军: Random Forest
+
+=== Random Forest 详细报告 ===
+                            precision    recall  f1-score   support
+
+           Apple Scab Leaf       0.10      0.10      0.10        10
+       Corn Gray leaf spot       0.00      0.00      0.00         3
+  Potato leaf early blight       0.20      0.38      0.26         8
+   Potato leaf late blight       0.00      0.00      0.00         7
+Squash Powdery mildew leaf       0.21      0.57      0.31         7
+  Tomato Early blight leaf       0.20      0.11      0.14         9
+ Tomato Septoria leaf spot       0.08      0.10      0.09        10
+                apple leaf       0.13      0.22      0.17         9
+           apple rust leaf       0.11      0.10      0.11        10
+          bell pepper leaf       0.00      0.00      0.00         7
+     bell pepper leaf spot       0.00      0.00      0.00         9
+            blueberry leaf       0.29      0.18      0.22        11
+               cherry leaf       0.33      0.10      0.15        10
+            corn rust leaf       0.11      0.10      0.11        10
+                grape leaf       0.67      0.20      0.31        10
+      grape leaf black rot       0.00      0.00      0.00         8
+       leaf blight of corn       0.12      0.33      0.17        12
+                peach leaf       0.50      0.67      0.57         9
+            raspberry leaf       0.00      0.00      0.00         7
+             soyabean leaf       0.14      0.12      0.13         8
+           strawberry leaf       0.29      0.50      0.36         8
+               tomato leaf       0.00      0.00      0.00         8
+tomato leaf bacterial spot       0.25      0.20      0.22        10
+   tomato leaf late blight       0.11      0.10      0.11        10
+  tomato leaf mosaic virus       0.00      0.00      0.00        10
+  tomato leaf yellow virus       0.43      0.50      0.46         6
+          tomato mold leaf       0.20      0.17      0.18         6
+
+                  accuracy                           0.18       232
+                 macro avg       0.17      0.18      0.15       232
+              weighted avg       0.17      0.18      0.16       232
+
+
+实验结束。图片已保存：
+1. chart_1_hsv_glcm_rank.png
+2. chart_2_confusion_hsv_glcm.png
