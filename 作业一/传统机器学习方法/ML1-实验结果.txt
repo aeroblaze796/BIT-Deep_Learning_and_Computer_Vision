@@ -1,0 +1,82 @@
+PS D:\Users\admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\admin\AppData\Local\Programs\Python\Python312\python.exe c:/Users/admin/Desktop/traditional_ml_lab.py
+步骤 1: 数据加载
+
+[训练集] 开始加载数据，共 27 类
+[训练集] 完成。耗时: 38.36s, 样本数: 2255
+
+[测试集] 开始加载数据，共 27 类
+[测试集] 完成。耗时: 4.01s, 样本数: 232
+
+步骤 2: 预处理
+
+步骤 3: 多模型训练
+正在训练: Logistic Regression 完成。Accuracy: 12.93% (耗时: 3.97s)
+正在训练: KNN (k=5) 完成。Accuracy: 12.50% (耗时: 0.15s)
+正在训练: Gaussian NB 完成。Accuracy: 16.38% (耗时: 0.14s)
+正在训练: Decision Tree 完成。Accuracy: 10.34% (耗时: 9.67s)
+正在训练: SVM (Linear) 完成。Accuracy: 17.67% (耗时: 2.36s)
+正在训练: SVM (RBF) 完成。Accuracy: 21.98% (耗时: 2.74s)
+正在训练: Random Forest 完成。Accuracy: 17.67% (耗时: 1.50s)
+正在训练: Hist Gradient Boosting 完成。Accuracy: 20.26% (耗时: 176.34s)
+正在训练: MLP (Neural Net) 完成。Accuracy: 20.26% (耗时: 6.90s)
+
+       传统机器学习模型排行榜
+                    Model  Accuracy
+0               SVM (RBF)  0.219828
+1  Hist Gradient Boosting  0.202586
+2        MLP (Neural Net)  0.202586
+3            SVM (Linear)  0.176724
+4           Random Forest  0.176724
+5             Gaussian NB  0.163793
+6     Logistic Regression  0.129310
+7               KNN (k=5)  0.125000
+8           Decision Tree  0.103448
+
+步骤 4: 最佳模型可视化
+冠军模型: SVM (RBF)
+混淆矩阵已保存: confusion_matrix_final.png
+
+SVM (RBF) 详细报告
+C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+                            precision    recall  f1-score   support
+
+           Apple Scab Leaf       0.00      0.00      0.00        10
+       Corn Gray leaf spot       0.00      0.00      0.00         3
+  Potato leaf early blight       0.07      0.12      0.09         8
+   Potato leaf late blight       0.00      0.00      0.00         7
+Squash Powdery mildew leaf       0.21      0.86      0.34         7
+  Tomato Early blight leaf       0.00      0.00      0.00         9
+ Tomato Septoria leaf spot       0.12      0.60      0.20        10
+                apple leaf       0.24      0.44      0.31         9
+           apple rust leaf       0.00      0.00      0.00        10
+          bell pepper leaf       0.00      0.00      0.00         7
+     bell pepper leaf spot       0.00      0.00      0.00         9
+            blueberry leaf       0.50      0.18      0.27        11
+               cherry leaf       0.00      0.00      0.00        10
+            corn rust leaf       0.60      0.30      0.40        10
+                grape leaf       0.00      0.00      0.00        10
+      grape leaf black rot       0.00      0.00      0.00         8
+       leaf blight of corn       0.26      0.83      0.40        12
+                peach leaf       0.21      0.56      0.30         9
+            raspberry leaf       0.05      0.14      0.08         7
+             soyabean leaf       1.00      0.12      0.22         8
+           strawberry leaf       0.46      0.75      0.57         8
+               tomato leaf       0.00      0.00      0.00         8
+tomato leaf bacterial spot       0.50      0.20      0.29        10
+   tomato leaf late blight       0.33      0.30      0.32        10
+  tomato leaf mosaic virus       0.00      0.00      0.00        10
+  tomato leaf yellow virus       1.00      0.17      0.29         6
+          tomato mold leaf       0.00      0.00      0.00         6
+
+                  accuracy                           0.22       232
+                 macro avg       0.21      0.21      0.15       232
+              weighted avg       0.21      0.22      0.16       232
+
+
+全部完成
+PS D:\Users\admin\AppData\Local\Programs\Microsoft VS Code> 
