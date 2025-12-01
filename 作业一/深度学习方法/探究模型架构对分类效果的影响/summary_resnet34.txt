@@ -1,0 +1,20 @@
+Early stopping triggered after 20 epochs of no improvement.
+Training complete in 14m 50s
+Best val Acc: 0.655172
+Best model saved to 探究模型架构对分类效果的影响-ResNet34_结果/best_ResNet-34_model.pth
+Training history plot saved to 探究模型架构对分类效果的影响-ResNet34_结果/training_history.png
+
+==============================
+      ResNet-34 Experiment Summary
+==============================
+-> Stop at Epoch: 93
+-> Total Training Time: 14m 50s
+------------------------------
+Best Model Performance:
+  - Best Test Accuracy:  65.52%
+  - Corresponding Train Accuracy: 86.04%
+------------------------------
+Model Complexity:
+  - Trainable Parameters: 21.30 M
+  - GFLOPs (Computation): 3.68 G
+==============================
