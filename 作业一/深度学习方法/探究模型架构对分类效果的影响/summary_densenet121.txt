@@ -1,0 +1,12 @@
+==============================
+      DenseNet-121 Experiment Summary
+==============================
+  - Best Validation Accuracy: 0.7414
+  - Corresponding Train Accuracy: 0.9526
+  - Best performance at Epoch: 46
+  - Training stopped at Epoch: 66
+  - Total Training Time: 11m 4s
+------------------------------
+  - Model Total Parameters: 6.98 M
+  - Model GFLOPs: 2.91 G
+==============================
